@@ -1,0 +1,9 @@
+
+assignment1.o: assignment1.cpp
+	g++ assignment1.cpp -o assignment1
+
+assignment1.cpp:
+	flex -o assignment1.cpp assignment1.l
+
+clean:
+	rm -f assignment1 assignment1.o assignment1.cpp
